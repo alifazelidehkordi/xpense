@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000000035 /* BudgetPlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000023 /* BudgetPlannerApp.swift */; };
+		000000000000000000000036 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000024 /* ContentView.swift */; };
+		000000000000000000000037 /* BudgetPlannerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000025 /* BudgetPlannerStore.swift */; };
+		000000000000000000000038 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000026 /* Transaction.swift */; };
+		000000000000000000000039 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000027 /* CurrencyFormatter.swift */; };
+		000000000000000000000040 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000028 /* AppTheme.swift */; };
+		000000000000000000000041 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000029 /* SignUpView.swift */; };
+		000000000000000000000042 /* BudgetSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000030 /* BudgetSetupView.swift */; };
+		000000000000000000000043 /* ProfilePhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000031 /* ProfilePhotoView.swift */; };
+		000000000000000000000044 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000032 /* DashboardView.swift */; };
+		000000000000000000000045 /* TransactionEntrySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000033 /* TransactionEntrySheet.swift */; };
+		000000000000000000000046 /* ProfileAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000034 /* ProfileAvatarView.swift */; };
+		000000000000000000000048 /* FirebaseSocialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000047 /* FirebaseSocialService.swift */; };
+		000000000000000000000050 /* LeaderboardTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000049 /* LeaderboardTabView.swift */; };
+		000000000000000000000061 /* CashflowDetectiveLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000051 /* CashflowDetectiveLessonView.swift */; };
+		000000000000000000000062 /* ExpenseTrackingLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000052 /* ExpenseTrackingLessonView.swift */; };
+		000000000000000000000063 /* RealisticBudgetLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000053 /* RealisticBudgetLessonView.swift */; };
+		000000000000000000000064 /* FixedCostsLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000054 /* FixedCostsLessonView.swift */; };
+		000000000000000000000065 /* GoalBasedSavingLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000055 /* GoalBasedSavingLessonView.swift */; };
+		000000000000000000000066 /* EmergencyBufferLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000056 /* EmergencyBufferLessonView.swift */; };
+		000000000000000000000067 /* OpportunityCostLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000057 /* OpportunityCostLessonView.swift */; };
+		000000000000000000000068 /* ImpulseSpendingLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000058 /* ImpulseSpendingLessonView.swift */; };
+		000000000000000000000069 /* DebtBasicsLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000059 /* DebtBasicsLessonView.swift */; };
+		000000000000000000000070 /* LearnCommonComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000060 /* LearnCommonComponents.swift */; };
+		7DD51FE82F5E411A00598BB5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7DD51FE72F5E411A00598BB5 /* FirebaseAuth */; };
+		7DD51FEA2F5E411A00598BB5 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7DD51FE92F5E411A00598BB5 /* FirebaseCore */; };
+		7DD51FEC2F5E411A00598BB5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7DD51FEB2F5E411A00598BB5 /* FirebaseFirestore */; };
+		7DD51FEE2F5E574500598BB5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DD51FED2F5E574500598BB5 /* GoogleService-Info.plist */; };
+		7DD51FF02F5E900000598BB5 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 7DD51FF12F5E900000598BB5 /* GoogleSignIn */; };
+		CBA508203AB602EF5473D632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D382304C0316A5BAB660DAE /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7DD51FF82F5F25F600598BB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000000000000000014;
+			remoteInfo = BudgetPlanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000013 /* XPense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPense.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000023 /* BudgetPlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetPlannerApp.swift; sourceTree = "<group>"; };
+		000000000000000000000024 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		000000000000000000000025 /* BudgetPlannerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetPlannerStore.swift; sourceTree = "<group>"; };
+		000000000000000000000026 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		000000000000000000000027 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
+		000000000000000000000028 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		000000000000000000000029 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		000000000000000000000030 /* BudgetSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetSetupView.swift; sourceTree = "<group>"; };
+		000000000000000000000031 /* ProfilePhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoView.swift; sourceTree = "<group>"; };
+		000000000000000000000032 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		000000000000000000000033 /* TransactionEntrySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionEntrySheet.swift; sourceTree = "<group>"; };
+		000000000000000000000034 /* ProfileAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAvatarView.swift; sourceTree = "<group>"; };
+		000000000000000000000047 /* FirebaseSocialService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSocialService.swift; sourceTree = "<group>"; };
+		000000000000000000000049 /* LeaderboardTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTabView.swift; sourceTree = "<group>"; };
+		000000000000000000000051 /* CashflowDetectiveLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashflowDetectiveLessonView.swift; sourceTree = "<group>"; };
+		000000000000000000000052 /* ExpenseTrackingLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackingLessonView.swift; sourceTree = "<group>"; };
+		000000000000000000000053 /* RealisticBudgetLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealisticBudgetLessonView.swift; sourceTree = "<group>"; };
+		000000000000000000000054 /* FixedCostsLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedCostsLessonView.swift; sourceTree = "<group>"; };
+		000000000000000000000055 /* GoalBasedSavingLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalBasedSavingLessonView.swift; sourceTree = "<group>"; };
+		000000000000000000000056 /* EmergencyBufferLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyBufferLessonView.swift; sourceTree = "<group>"; };
+		000000000000000000000057 /* OpportunityCostLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpportunityCostLessonView.swift; sourceTree = "<group>"; };
+		000000000000000000000058 /* ImpulseSpendingLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpulseSpendingLessonView.swift; sourceTree = "<group>"; };
+		000000000000000000000059 /* DebtBasicsLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtBasicsLessonView.swift; sourceTree = "<group>"; };
+		000000000000000000000060 /* LearnCommonComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnCommonComponents.swift; sourceTree = "<group>"; };
+		1D382304C0316A5BAB660DAE /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DD51FED2F5E574500598BB5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7DD51FEF2F5E580700598BB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7DD51FF42F5F25F600598BB5 /* XPenseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XPenseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7DD51FF52F5F25F600598BB5 /* BudgetPlannerTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BudgetPlannerTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000000000017 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DD51FF02F5E900000598BB5 /* GoogleSignIn in Frameworks */,
+				7DD51FEA2F5E411A00598BB5 /* FirebaseCore in Frameworks */,
+				7DD51FE82F5E411A00598BB5 /* FirebaseAuth in Frameworks */,
+				7DD51FEC2F5E411A00598BB5 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DD51FF12F5F25F600598BB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000003 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000005 /* BudgetPlanner */,
+				7DD51FF52F5F25F600598BB5 /* BudgetPlannerTests */,
+				000000000000000000000004 /* Products */,
+				7DD51FED2F5E574500598BB5 /* GoogleService-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000013 /* XPense.app */,
+				7DD51FF42F5F25F600598BB5 /* XPenseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000000000000000005 /* BudgetPlanner */ = {
+			isa = PBXGroup;
+			children = (
+				7DD51FEF2F5E580700598BB5 /* Info.plist */,
+				000000000000000000000023 /* BudgetPlannerApp.swift */,
+				000000000000000000000024 /* ContentView.swift */,
+				000000000000000000000006 /* Design */,
+				000000000000000000000007 /* Models */,
+				000000000000000000000008 /* Support */,
+				000000000000000000000009 /* Views */,
+				000000000000000000000071 /* LearnTab */,
+				1D382304C0316A5BAB660DAE /* Assets.xcassets */,
+			);
+			path = BudgetPlanner;
+			sourceTree = "<group>";
+		};
+		000000000000000000000006 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000028 /* AppTheme.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		000000000000000000000007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000025 /* BudgetPlannerStore.swift */,
+				000000000000000000000026 /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		000000000000000000000008 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000027 /* CurrencyFormatter.swift */,
+				000000000000000000000047 /* FirebaseSocialService.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		000000000000000000000009 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000010 /* Onboarding */,
+				000000000000000000000011 /* Home */,
+				000000000000000000000012 /* Shared */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		000000000000000000000010 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000029 /* SignUpView.swift */,
+				000000000000000000000030 /* BudgetSetupView.swift */,
+				000000000000000000000031 /* ProfilePhotoView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		000000000000000000000011 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000032 /* DashboardView.swift */,
+				000000000000000000000049 /* LeaderboardTabView.swift */,
+				000000000000000000000033 /* TransactionEntrySheet.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		000000000000000000000012 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000034 /* ProfileAvatarView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		000000000000000000000071 /* LearnTab */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000051 /* CashflowDetectiveLessonView.swift */,
+				000000000000000000000052 /* ExpenseTrackingLessonView.swift */,
+				000000000000000000000053 /* RealisticBudgetLessonView.swift */,
+				000000000000000000000054 /* FixedCostsLessonView.swift */,
+				000000000000000000000055 /* GoalBasedSavingLessonView.swift */,
+				000000000000000000000056 /* EmergencyBufferLessonView.swift */,
+				000000000000000000000057 /* OpportunityCostLessonView.swift */,
+				000000000000000000000058 /* ImpulseSpendingLessonView.swift */,
+				000000000000000000000059 /* DebtBasicsLessonView.swift */,
+				000000000000000000000060 /* LearnCommonComponents.swift */,
+			);
+			name = LearnTab;
+			path = ../LearnTab;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000014 /* XPense */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000015 /* Build configuration list for PBXNativeTarget "XPense" */;
+			buildPhases = (
+				000000000000000000000016 /* Sources */,
+				000000000000000000000017 /* Frameworks */,
+				000000000000000000000018 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XPense;
+			productName = BudgetPlanner;
+			productReference = 000000000000000000000013 /* XPense.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7DD51FF32F5F25F600598BB5 /* XPenseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DD51FFA2F5F25F600598BB5 /* Build configuration list for PBXNativeTarget "XPenseTests" */;
+			buildPhases = (
+				7DD51FF02F5F25F600598BB5 /* Sources */,
+				7DD51FF12F5F25F600598BB5 /* Frameworks */,
+				7DD51FF22F5F25F600598BB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DD51FF92F5F25F600598BB5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7DD51FF52F5F25F600598BB5 /* BudgetPlannerTests */,
+			);
+			name = XPenseTests;
+			productName = BudgetPlannerTests;
+			productReference = 7DD51FF42F5F25F600598BB5 /* XPenseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					000000000000000000000014 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					7DD51FF32F5F25F600598BB5 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 000000000000000000000014;
+					};
+				};
+			};
+			buildConfigurationList = 000000000000000000000002 /* Build configuration list for PBXProject "XPense" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 000000000000000000000003;
+			packageReferences = (
+				7DD51FE62F5E411A00598BB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				7DD51FEF2F5E900000598BB5 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = 000000000000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000014 /* XPense */,
+				7DD51FF32F5F25F600598BB5 /* XPenseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000000000000000000018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DD51FEE2F5E574500598BB5 /* GoogleService-Info.plist in Resources */,
+				CBA508203AB602EF5473D632 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DD51FF22F5F25F600598BB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000016 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000035 /* BudgetPlannerApp.swift in Sources */,
+				000000000000000000000036 /* ContentView.swift in Sources */,
+				000000000000000000000037 /* BudgetPlannerStore.swift in Sources */,
+				000000000000000000000038 /* Transaction.swift in Sources */,
+				000000000000000000000039 /* CurrencyFormatter.swift in Sources */,
+				000000000000000000000040 /* AppTheme.swift in Sources */,
+				000000000000000000000041 /* SignUpView.swift in Sources */,
+				000000000000000000000042 /* BudgetSetupView.swift in Sources */,
+				000000000000000000000043 /* ProfilePhotoView.swift in Sources */,
+				000000000000000000000044 /* DashboardView.swift in Sources */,
+				000000000000000000000045 /* TransactionEntrySheet.swift in Sources */,
+				000000000000000000000046 /* ProfileAvatarView.swift in Sources */,
+				000000000000000000000048 /* FirebaseSocialService.swift in Sources */,
+				000000000000000000000050 /* LeaderboardTabView.swift in Sources */,
+				000000000000000000000061 /* CashflowDetectiveLessonView.swift in Sources */,
+				000000000000000000000062 /* ExpenseTrackingLessonView.swift in Sources */,
+				000000000000000000000063 /* RealisticBudgetLessonView.swift in Sources */,
+				000000000000000000000064 /* FixedCostsLessonView.swift in Sources */,
+				000000000000000000000065 /* GoalBasedSavingLessonView.swift in Sources */,
+				000000000000000000000066 /* EmergencyBufferLessonView.swift in Sources */,
+				000000000000000000000067 /* OpportunityCostLessonView.swift in Sources */,
+				000000000000000000000068 /* ImpulseSpendingLessonView.swift in Sources */,
+				000000000000000000000069 /* DebtBasicsLessonView.swift in Sources */,
+				000000000000000000000070 /* LearnCommonComponents.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DD51FF02F5F25F600598BB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7DD51FF92F5F25F600598BB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 000000000000000000000014 /* XPense */;
+			targetProxy = 7DD51FF82F5F25F600598BB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		000000000000000000000019 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		000000000000000000000020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		000000000000000000000021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BudgetPlanner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = XPense;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan receipts to add expenses automatically.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Choose a profile photo for your budget planner account.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alifazelidehkordi.xpenseapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		000000000000000000000022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BudgetPlanner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = XPense;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan receipts to add expenses automatically.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Choose a profile photo for your budget planner account.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alifz.xpense;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7DD51FFB2F5F25F600598BB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = samirlohani.com.BudgetPlannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XPense.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/XPense";
+			};
+			name = Debug;
+		};
+		7DD51FFC2F5F25F600598BB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = samirlohani.com.BudgetPlannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XPense.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/XPense";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000000000002 /* Build configuration list for PBXProject "XPense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000019 /* Debug */,
+				000000000000000000000020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000015 /* Build configuration list for PBXNativeTarget "XPense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000021 /* Debug */,
+				000000000000000000000022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DD51FFA2F5F25F600598BB5 /* Build configuration list for PBXNativeTarget "XPenseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DD51FFB2F5F25F600598BB5 /* Debug */,
+				7DD51FFC2F5F25F600598BB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7DD51FE62F5E411A00598BB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.10.0;
+			};
+		};
+		7DD51FEF2F5E900000598BB5 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7DD51FE72F5E411A00598BB5 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DD51FE62F5E411A00598BB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		7DD51FE92F5E411A00598BB5 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DD51FE62F5E411A00598BB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		7DD51FEB2F5E411A00598BB5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DD51FE62F5E411A00598BB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		7DD51FF12F5E900000598BB5 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DD51FEF2F5E900000598BB5 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}
