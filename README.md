@@ -45,13 +45,6 @@ Earn experience points (**XP**) for logging receipts and completing learning mod
 - Built-in **levels** that teach concepts like **"Why Budgets Fail"** and **"Sustainable Cuts."**
 - Unlock badges *(like the **Reality Builder Badge**)* as you master your money.
 
-## 📱 Screenshots
-
-| The Journey | Learning Reality | Budgeting |
-|------------|------------------|-----------|
-| 
- | <img ![photo_2026-03-12_17-25-07](https://github.com/user-attachments/assets/85fd67b2-40ee-47ea-b14a-099b4b21006d)
- src="screenshots/learn.png" width="250"> | <img src="screenshots/budget.png" width="250"> |
 
 ## 🛠 Tech Stack
 
