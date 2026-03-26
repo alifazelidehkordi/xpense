@@ -1,3 +1,4 @@
+<img width="2752" height="1536" alt="Gemini_Generated_Image_xfqblzxfqblzxfqb" src="https://github.com/user-attachments/assets/a7c3dc18-1bc9-4fa7-8c11-c99726fac9ae" />
 
 
 # XPense 💰
