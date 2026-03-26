@@ -49,7 +49,8 @@ Earn experience points (**XP**) for logging receipts and completing learning mod
 
 | The Journey | Learning Reality | Budgeting |
 |------------|------------------|-----------|
-| <img src="screenshots/home.png" width="250"> | <img src="screenshots/learn.png" width="250"> | <img src="screenshots/budget.png" width="250"> |
+| ![photo_2026-03-12_17-25-07](https://github.com/user-attachments/assets/330b7cd8-48a0-417e-9791-d260fe8f3ba4)
+ | <img src="screenshots/learn.png" width="250"> | <img src="screenshots/budget.png" width="250"> |
 
 ## 🛠 Tech Stack
 
