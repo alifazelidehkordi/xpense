@@ -101,7 +101,7 @@ Open in **Xcode**
 ```
 XPense.xcodeproj
 ```
-
+.
 ---
 
 ## 3️⃣ Setup Firebase
