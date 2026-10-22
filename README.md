@@ -140,6 +140,8 @@ Planned features:
 
 Contributions are welcome!
 
+Minor contribution: [@Parisa6Izadyar](https://github.com/Parisa6Izadyar).
+
 ### Steps
 
 1. Fork the repository
